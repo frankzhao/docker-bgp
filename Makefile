@@ -1,6 +1,7 @@
 ROOT	:= $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 NAME	:= bgp
-TAG 	:= frankzhao/$(NAME)
+VERSION := 1.0
+TAG 	:= chickenmaru/$(NAME):$(VERSION)
 
 .PHONY: all build
 
