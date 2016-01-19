@@ -5,7 +5,7 @@ bird:
         - ./bird.conf:/etc/bird.conf
 
 bgp:
-    image: frankzhao/bgp
+    image: chickenmaru/bgp
     volumes:
         - ./routes:/root/routes
         - ./startbgp.sh:/bin/startbgp
