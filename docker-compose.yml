@@ -1,0 +1,12 @@
+bird:
+    image: alectolytic/bird
+    volumes:
+        - /var/run:/var/run
+        - ./bird.conf:/etc/bird.conf
+
+bgp:
+    image: frankzhao/bgp
+    volumes:
+        - ./routes:/root/routes
+        - ./startbgp.sh:/bin/startbgp
+    privileged: true
